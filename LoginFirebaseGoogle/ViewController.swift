@@ -16,7 +16,17 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        verificarSesionGuardada()
+    }
+    
+    func verificarSesionGuardada(){
+        let defaults = UserDefaults.standard
+        if let email = defaults.value(forKey: "email") as? String {
+            print(email)
+            //Navegar al Home
+            performSegue(withIdentifier: "loginHome", sender: self)
+        }
     }
 
     

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		60101AF028B6994600B4217F /* RegistrarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60101AEF28B6994500B4217F /* RegistrarViewController.swift */; };
 		60101AF228B6A4ED00B4217F /* VCEjemplo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60101AF128B6A4ED00B4217F /* VCEjemplo.swift */; };
+		60101AF428B6AEAC00B4217F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60101AF328B6AEAC00B4217F /* HomeViewController.swift */; };
 		60E8DE8C28B41931002E3451 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E8DE8B28B41931002E3451 /* AppDelegate.swift */; };
 		60E8DE8E28B41931002E3451 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E8DE8D28B41931002E3451 /* SceneDelegate.swift */; };
 		60E8DE9028B41931002E3451 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E8DE8F28B41931002E3451 /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		60101AEF28B6994500B4217F /* RegistrarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrarViewController.swift; sourceTree = "<group>"; };
 		60101AF128B6A4ED00B4217F /* VCEjemplo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCEjemplo.swift; sourceTree = "<group>"; };
+		60101AF328B6AEAC00B4217F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		60E8DE8828B41930002E3451 /* LoginFirebaseGoogle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginFirebaseGoogle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60E8DE8B28B41931002E3451 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60E8DE8D28B41931002E3451 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				60E8DE9F28B42333002E3451 /* GoogleService-Info.plist */,
 				60101AEF28B6994500B4217F /* RegistrarViewController.swift */,
 				60101AF128B6A4ED00B4217F /* VCEjemplo.swift */,
+				60101AF328B6AEAC00B4217F /* HomeViewController.swift */,
 			);
 			path = LoginFirebaseGoogle;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 				60101AF028B6994600B4217F /* RegistrarViewController.swift in Sources */,
 				60E8DE8E28B41931002E3451 /* SceneDelegate.swift in Sources */,
 				60101AF228B6A4ED00B4217F /* VCEjemplo.swift in Sources */,
+				60101AF428B6AEAC00B4217F /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
