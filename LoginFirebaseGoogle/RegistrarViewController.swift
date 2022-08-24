@@ -43,8 +43,6 @@ class RegistrarViewController: UIViewController {
                     default:
                         print("error desconocido")
                     }
-                    
-                    
                     //self.showMSJAlerta(msj: "ERROR AL CREAR USUARIO : \(e.localizedDescription)")
                 } else {
                     print("Se creó el usuario en Firebase \(authResult?.description)")
@@ -57,7 +55,6 @@ class RegistrarViewController: UIViewController {
 //                    }
 //                    alerta.addAction(accionAceptar)
 //                    self.present(alerta, animated: true, completion: nil)
-                    
                 }
             }
         }
