@@ -7,6 +7,8 @@
 
 import UIKit
 import FirebaseAuth
+import GoogleSignIn
+import Firebase
 
 class ViewController: UIViewController {
     
@@ -57,6 +59,34 @@ class ViewController: UIViewController {
          There is no user record corresponding to this identifier. The user may have been deleted.
          The email address is badly formatted.
          */
+    }
+    
+    
+    @IBAction func sigInGoogleButton(_ sender: UIButton) {
+        
+        guard let clientID = FirebaseApp.app()?.options.clientID else { return }
+        
+        let config = GIDConfiguration(clientID: clientID)
+        
+        GIDSignIn.sharedInstance.signIn(with: config, presenting: self) { [unowned self] user, error in
+            if let error = error {
+                print("Error al registrar cuenta google: \(error.localizedDescription)")
+                return
+            }
+            
+            guard let authentication = user?.authentication, let idToken = authentication.idToken else { return }
+            
+            let credential = GoogleAuthProvider.credential(withIDToken: idToken, accessToken: authentication.accessToken)
+            
+            Auth.auth().signIn(with: credential) { resultado, error in
+                if let loginResultado = resultado, error == nil {
+                    print("Inicios de sesion con Google exitoso\(loginResultado)")
+                    self.performSegue(withIdentifier: "loginHome", sender: self)
+                } else {
+                    print("Error al autenticar con Google")
+                }
+            }
+        }
     }
     
 

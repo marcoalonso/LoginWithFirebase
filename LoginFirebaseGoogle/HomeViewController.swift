@@ -13,6 +13,11 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         guardarSesion()
+        
+        if let email = Auth.auth().currentUser?.email {
+         print("Bienvenido: \(email)")
+        }
+        navigationItem.hidesBackButton = true
     }
     func guardarSesion(){
         if let email = Auth.auth().currentUser?.email {
